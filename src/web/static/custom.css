@@ -1,0 +1,27 @@
+[role=button], [type=button], [type=file]::file-selector-button, [type=reset], [type=submit], button {
+    --pico-background-color: #007bff; /* Blue background */
+    --pico-border-color: #007bff; /* Blue border */
+    --pico-color: white; /* White text */
+}
+
+/* Handle the navbars */
+:where(a:not([role=button])), [role=link] {
+    --pico-color: #007bff;
+}
+
+/* Handle the search buttons */
+[role=button], [type=button], [type=file]::file-selector-button, [type=reset], [type=submit], button {
+    --pico-background-color: #007bff;
+}
+
+/* Handles the hovers */
+:root:not([data-theme=dark]), [data-theme=light] {
+    --pico-primary: #0256b1;
+    --pico-primary-background: #0256b1;
+    --pico-primary-hover: #0256b1;
+    --pico-primary-hover-background: #0256b1;
+    --pico-secondary-hover: #0256b1;
+    --pico-secondary-hover-background: #0256b1;
+    --pico-ins-color: #0256b1;
+Show all properties (52 more)
+}
