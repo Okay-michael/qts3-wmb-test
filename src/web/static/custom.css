@@ -1,27 +1,31 @@
-[role=button], [type=button], [type=file]::file-selector-button, [type=reset], [type=submit], button {
-    --pico-background-color: #007bff; /* Blue background */
-    --pico-border-color: #007bff; /* Blue border */
-    --pico-color: white; /* White text */
-}
+/*
+** Custom CSS for QuickStatements 3.0 **
 
-/* Handle the navbars */
-:where(a:not([role=button])), [role=link] {
-    --pico-color: #007bff;
-}
+This file overrides some default Pico CSS rules to achieve the desired
+design for QuickStatements 3.0.
 
-/* Handle the search buttons */
-[role=button], [type=button], [type=file]::file-selector-button, [type=reset], [type=submit], button {
+**Key Modifications:**
+
+- Styles buttons with a blue background, blue borders and white text.
+- Styles the navbar links with a blue color.
+- Change the hover effects for buttons and navbar links to a deeper blue.
+*/
+
+
+/* Style buttons with the role="button" attribute or type="submit" */
+[role=button],[type=submit]{
     --pico-background-color: #007bff;
+    --pico-border-color: #007bff;
+    --pico-color: white; 
 }
 
-/* Handles the hovers */
+/* Style all navigation links(a tags) to be blue */
+a {
+    --pico-color: #007bff;
+} 
+
+/* Handle hover effects for buttons and navigation links */
 :root:not([data-theme=dark]), [data-theme=light] {
-    --pico-primary: #0256b1;
-    --pico-primary-background: #0256b1;
     --pico-primary-hover: #0256b1;
     --pico-primary-hover-background: #0256b1;
-    --pico-secondary-hover: #0256b1;
-    --pico-secondary-hover-background: #0256b1;
-    --pico-ins-color: #0256b1;
-Show all properties (52 more)
 }
